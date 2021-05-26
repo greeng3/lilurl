@@ -83,6 +83,7 @@ class DatabaseWrapper:
         return len(self.__timestamps)
 
     def braindump(self):
+        """This is for debugging purposes, to distinguish between database issues and flask/HTTP/template issues."""
         print("url_to_short")
         for k, v in self.__url_to_short.items():
             print(f"    {k}: {v}")

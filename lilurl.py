@@ -14,10 +14,7 @@ def index():
 
 @app.route("/<short>")
 def redirect_short(short):
-    print(db_wrapper.braindump())
-    print(f"Looking up: {short}")
     if (url := db_wrapper.lookup_short(short)) is not None:
-        print(f"Found: {url}")
         if not url.startswith("http://") and not url.startswith("https://"):
             url = f"http://{url}"
         return redirect(url, 301)
