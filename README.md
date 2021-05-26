@@ -53,3 +53,5 @@ Alas.
 The HTML and CSS are rudimentary, and the robots.txt is just a placeholder.  On a real service, more time would be devoted to making those look nice, and making space for advertising to pay for this service.  :-)
 
 This is a single-threaded, single-server demo.  It isn't containerized, though I considered it.  That would be one simple way to scale it, after all, and to keep its db mangageable, say with kubernetes or something similar.
+
+I confess I got a little carried away, and spent more like 2.5 hours, but I wanted a working demo that had basic, if ugly functionality.
