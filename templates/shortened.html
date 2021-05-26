@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename= 'css/style.css') }}"
+    />
+    <title>LilUrl</title>
+  </head>
+  <body>
+    <h1>LilUrl</h1>
+    <hr />
+
+    <h2>server_part shortened_url</h2>
+
+    <h2>Shorten a URL</h2>
+    <form action="http://localhost:5000/_shorten" method="post">
+      <label for="url">URL:</label>
+      <input type="text" id="url" name="url" /><br /><br />
+      <input type="submit" value="Shorten" />
+    </form>
+
+    <hr />
+  </body>
+</html>

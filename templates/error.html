@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename= 'css/style.css') }}"
+    />
+    <title>LilUrl Error</title>
+  </head>
+  <body>
+    <h1>LilUrl Error</h1>
+    <hr />
+
+    <h2>{{server_part}}{{short}}</h2>
+    <h3>Sorry. That URL is not one of ours, or is expired.</h3>
+
+    <hr />
+  </body>
+</html>
